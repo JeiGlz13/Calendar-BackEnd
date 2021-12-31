@@ -28,6 +28,8 @@ app.use(cors());
  app.use('/api/auth', require('./routes/auth'));
  //TODO CRUD
 
+ app.use('/api/events', require('./routes/events'));
+
 
  //Escuchar peticiones
  app.listen(process.env.PORT    , () =>{
